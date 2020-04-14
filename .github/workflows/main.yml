@@ -25,7 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run Makefile
       env:
-          TOKEN: ${{ 
+          TOKEN: ${{ secrets.TOKEN }}
       run: make build
 
     # Runs a set of commands using the runners shell
